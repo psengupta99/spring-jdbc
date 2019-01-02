@@ -13,7 +13,7 @@ public class MyDaoSupport extends NamedParameterJdbcDaoSupport{
 	
 public List<Circle> getCircle() {
 		
-		String sql = "SELECT * FROM CIRCLE";
+		String sql = "SELECT * FROM CIRCLE"; //in case of hibernate the name of the table in the query should match the entity.
 		return this.getJdbcTemplate().query(sql, new CircleRowMapper());
 	}
 
