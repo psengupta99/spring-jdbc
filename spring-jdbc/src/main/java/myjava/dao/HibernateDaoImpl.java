@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import myjava.model.Circle;
-
+//hibernate package..
 @Repository(value = "hibernateDao")
 public class HibernateDaoImpl {
 
